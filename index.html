@@ -416,6 +416,13 @@ nav {
   color: rgba(184,149,106,0.07); font-style: italic;
   letter-spacing: -0.05em;
 }
+.hero-deco-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  z-index: 2;
+}
 
 @keyframes morphBlob {
   0%, 100% { border-radius: 60% 40% 50% 50% / 50% 50% 40% 60%; }
@@ -694,6 +701,13 @@ section { padding: 100px 40px; }
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(60px, 10vw, 120px); font-weight: 300;
   color: rgba(255,255,255,0.55); font-style: italic;
+  position: relative; z-index: 2;
+}
+.about-frame-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
 
 .about-badge {
@@ -1145,6 +1159,7 @@ footer { background: var(--charcoal); padding: 60px 40px 40px; }
   <div class="hero-bg"></div>
   <div class="hero-grain"></div>
   <div class="hero-deco">
+    <img src="image5.jpeg" alt="Nærbilde av fot" class="hero-deco-img" loading="lazy">
     <div class="hero-deco-inner">M</div>
   </div>
   <div class="hero-content">
@@ -1308,6 +1323,7 @@ footer { background: var(--charcoal); padding: 60px 40px 40px; }
     <div class="about-grid">
       <div class="about-visual fade-in-left">
         <div class="about-frame">
+          <img src="4460a004-708a-4878-95ab-3cd31b97a218.jpg" alt="Fotbehandling hos Mona" class="about-frame-img" loading="lazy">
           <div class="about-frame-inner">M</div>
         </div>
         <div class="about-badge">
